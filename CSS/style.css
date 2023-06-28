@@ -1,0 +1,235 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image  */
+#logo{
+    margin: 5px 20px;
+}
+
+#logo img{
+    height: 65px;
+    margin: 9px 9px;
+}
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:url('https://img.freepik.com/free-photo/indian-food-circular-frame-with-copy-space_23-2148747658.jpg?w=740&t=st=1686229114~exp=1686229714~hmac=cc0ca5cf7fe3015e88582a1751cec59d4295d8f3e54675e130d6c32d8e5c755f') no-repeat center center/cover;
+    height: 657px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+.services-container{
+    margin-top: 20px;
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin: 3px 6px;
+    padding: 34px;
+    border-radius: 23px;
+    background-color: rgb(255 239 239);
+}
+
+
+#services .box img{
+    height: 140px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Righteous', cursive;
+}
+
+/* Clients Section */
+#client-section{
+    position: relative;
+    margin-top: 60px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://img.freepik.com/free-photo/business-handshake-technology-corporate-business-concept_53876-97639.jpg?w=826&t=st=1686217361~exp=1686217961~hmac=2d1a23424e6915f7b0033fbc1f4e1d668cd9ed2386c28fcc71f0e6996aaab7a0') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 120px;    
+}
+
+/* Contact section  */
+#contact{
+    position: relative;
+    margin-top: 30px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://img.freepik.com/free-photo/closeup-image-office-phone_144627-637.jpg?w=740&t=st=1686218976~exp=1686219576~hmac=69dae0df241a4cecbd47a2aff07566c0d965dc4b817c7ff7990b26edd5ad686e') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box form label{
+    font-family: 'Righteous', cursive;
+    font-size: 1.3rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility class */
+.h-primary{
+    font-family: 'Righteous', cursive;
+    font-size: 2.8rem;
+    padding: 22px;
+}
+
+.h-secondary{
+    font-family: 'Righteous', cursive;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
